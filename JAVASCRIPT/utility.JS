@@ -178,7 +178,6 @@ function modal(data) {
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>

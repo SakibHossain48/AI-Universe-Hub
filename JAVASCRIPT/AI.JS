@@ -49,8 +49,7 @@ cardContainer.addEventListener("click", (event) => {
       });
   }
 });
-
-//when sort button is clicked, perform sorting in ascending order based on date of cards which are available //
+///when sort button is clicked, perform sorting in ascending order based on date of cards which are available ///
 sortBtn.addEventListener("click", function () {
   spinner.classList.remove("hidden");
   btnSeeMore.classList.add("hidden");
@@ -78,7 +77,6 @@ sortBtn.addEventListener("click", function () {
         console.log(error);
       });
   }
-
   cardContainer.addEventListener("click", (event) => {
     const clickedElement = event.target;
     const buttonId = clickedElement.id;
