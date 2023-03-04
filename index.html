@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e272fb9b9a.js" crossorigin="anonymous"></script>
+    <title>AI Universe Hub</title>
+    <link rel="icon" href="images/ai.png">
+</head>
+
+<body>
+    <!-- header start-->
+    <header>
+        <h1 class="w-3/4 mx-auto text-center text-4xl font-bold my-10">AI Universe Hub</h1>
+        <div class="w-fit mx-auto mb-8">
+            <button id="sort-btn" class="bg-orange-600 rounded-md px-2 py-2  text-white font-bold ">Sort by
+                Date</button>
+        </div>
+    </header>
+
+    <!-- main  start-->
+    <main>
+        <!-- spinner -->
+        <section>
+            <div id="spinner" class="hidden text-center">
+                Loading
+                <i class="fa-solid fa-circle-notch animate-spin"></i>
+            </div>
+        </section>
+
+        <!-- see more and dynamic card section -->
+        <section>
+            <div id="cards-container" class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-3/4 mx-auto">
+                <!-- cards added dynamically -->
+            </div>
+
+            <div class="w-fit mx-auto mt-8">
+                <button id="btn-see-more" class="hidden bg-orange-600 rounded-md px-2 py-2  text-white font-bold ">See
+                    More</button>
+            </div>
+        </section>
+
+        <!-- dynamic modal section -->
+        <section id="modal-container">
+        </section>
+    </main>
+    <!-- footer section start -->
+    <footer>
+        <div class="h-10"></div>
+    </footer>
+</body>
+<!--SCRIPT part -->
+<script src="JAVASCRIPT/utility.JS"></script>
+<script src="JAVASCRIPT/AI.JS"></script>
+<script src="JAVASCRIPT/modal.JS"></script>
+<script src="JAVASCRIPT/spinner.JS"></script>
+</html>
